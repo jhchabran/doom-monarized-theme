@@ -84,7 +84,7 @@ determine the exact padding."
 
    ;; face categories -- required for all themes
    (highlight      (doom-darken orange 0.1))
-   (vertical-bar   (doom-darken base1 0.5))
+   (vertical-bar   bg)
    (selection      dark-blue)
    (builtin        (doom-lighten fg 0.1))
    (comments       (if doom-monarized-brighter-comments blue base5))
@@ -95,7 +95,7 @@ determine the exact padding."
    (methods        cyan)
    (operators      orange)
    (type           (doom-lighten fg 0.5))
-   (strings        (doom-lighten fg 0.3))
+   (strings        (doom-lighten fg 0.4))
    (variables      fg)
    (numbers        (doom-lighten fg 0.2))
    (region         base0)
