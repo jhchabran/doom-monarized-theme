@@ -132,6 +132,8 @@ determine the exact padding."
   ((company-tooltip-selection     :background dark-cyan)
    (elscreen-tab-other-screen-face :background "#353a42" :foreground "#1e2022")
 
+   (lazy-highlight :background (doom-darken dark-blue 0.4))
+
    ((line-number &override) :foreground base4)
    ((line-number-current-line &override) :foreground fg)
 
@@ -152,6 +154,9 @@ determine the exact padding."
    (font-lock-constant-face
     :weight 'bold
     :foreground constants)
+
+   ;; LSP
+   (lsp-face-highlight-textual :foreground orange)
 
    ;; Centaur tabs
    (centaur-tabs-active-bar-face :background blue)
