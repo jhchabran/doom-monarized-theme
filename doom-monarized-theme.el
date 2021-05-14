@@ -67,7 +67,10 @@ determine the exact padding."
    (base7      '("#788484" "#788484" "brightblack"))
    (base8      '("#626C6C" "#626C6C" "white"))
    (fg-alt     '("#657b83" "#657b83" "white"))
-   (fg         '("#b58900" "#839496" "brightwhite"))
+   ;; (fg         '("#b58900" "#839496" "brightwhite"))
+   ;; (fg         '("#f5bc0c" "#839496" "brightwhite"))
+   ;; (fg         '("#e0ba41" "#839496" "brightwhite"))
+   (fg         '("#839496" "#839496" "brightwhite"))
 
    (grey       base4)
    (red        '("#dc322f" "#ff6655" "red"))
@@ -154,6 +157,11 @@ determine the exact padding."
    (font-lock-constant-face
     :weight 'bold
     :foreground constants)
+
+   ;; Treemacs
+   (treemacs-root-face (:foreground (doom-lighten fg 0.7)))
+   (treemacs-directory-face (:foreground (doom-lighten fg 0.5)))
+
 
    ;; LSP
    (lsp-face-highlight-textual :foreground orange)
